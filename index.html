@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="shortcut icon" href="./lungs-picture.avif">
+  <title>Lungs Game</title>
+</head>
+
+<body>
+  <div class="game-container">
+    <div class="square square-1"></div>
+    <div class="square square-2"></div>
+    <div class="square square-3"></div>
+    <div class="square square-4"></div>
+    <div class="square square-5"></div>
+    <div class="square square-6"></div>
+    <div class="square square-7"></div>
+    <div class="square square-8"></div>
+    <div class="square square-9"></div>
+    <div class="square square-10"></div>
+    <div class="square square-11"></div>
+    <div class="square square-12"></div>
+    <div class="square square-13"></div>
+    <div class="square square-14"></div>
+    <div class="square square-15"></div>
+    <div class="square square-16"></div>
+    <div class="square square-17"></div>
+    <div class="square square-18"></div>
+    <div class="square square-19"></div>
+    <div class="square square-20"></div>
+    <div class="square square-21"></div>
+    <div class="square square-22"></div>
+    <div class="square square-23"></div>
+    <div class="square square-24"></div>
+    <div class="square square-25"></div>
+    <div class="square square-26"></div>
+    <div class="square square-27"></div>
+    <div class="square square-28"></div>
+    <div class="square square-29"></div>
+    <div class="square square-30"></div>
+    <div class="square square-31"></div>
+    <div class="square square-32"></div>
+    <div class="square square-33"></div>
+    <div class="square square-34"></div>
+    <div class="square square-35"></div>
+    <div class="square square-36"></div>
+    <div class="square square-37"></div>
+    <div class="square square-38"></div>
+    <div class="square square-39"></div>
+    <div class="square square-40"></div>
+    <div class="square square-41"></div>
+    <div class="square square-42"></div>
+    <div class="square square-43"></div>
+    <div class="square square-44"></div>
+    <div class="square square-45"></div>
+    <div class="square square-46"></div>
+    <div class="square square-47"></div>
+    <div class="square square-48"></div>
+    <div class="square square-49"></div>
+    <div class="square square-50"></div>
+    <div class="square square-51"></div>
+    <div class="square square-52"></div>
+    <div class="square square-53"></div>
+    <div class="square square-54"></div>
+    <div class="square square-55"></div>
+    <div class="square square-56"></div>
+    <div class="square square-57"></div>
+    <div class="square square-58"></div>
+    <div class="square square-59"></div>
+    <div class="square square-60"></div>
+    <div class="square square-61"></div>
+    <div class="square square-62"></div>
+    <div class="square square-63"></div>
+    <div class="square square-64"></div>
+    <div class="targetLeft target1"></div>
+    <div class="targetLeft target2"></div>
+    <div class="targetLeft target3"></div>
+    <div class="targetLeft target4"></div>
+    <div class="targetRight target5"></div>
+    <div class="targetRight target6"></div>
+    <div class="targetRight target7"></div>
+    <div class="targetRight target8"></div>
+    <div id="lungsgame">LUNGS GAME</div>
+    <div id="score"></div>
+    <div id="time">00:00</div>
+    <button id="level">Level 1</button>
+    <button id="start">Start</button>
+    <button id="Numbers">Numbers</button>
+    <button id="NoNumbers">No Numbers</button>
+    <button id="HTP">How to play ?</button>
+    <button onclick="newgame()" id="newgame">New Game</button>
+    <div id="HowToPlayEnglish" class="modal">
+      <div class="modal-content">
+        <span class="close closeHTP">&times;</span>
+        <p>
+          <button id="languageEnglish">Français</button>
+          <span class="centerText">What is this game for?</span> <br>
+          This game aims to:<br>
+          - raise awareness about lung cancer.<br>
+          - allow professionals to practice using a mouse with precision,
+          a touchpad or a controller. Indeed, current navigation devices in the human body
+          are controlled from a controller.<br> <br>
+          <span class="centerText">The goal of the game ?</span> <br>
+          You have to touch the 8 cancer cells without touching the walls of the lungs.<br> <br>
+          <span class="centerText">How to play ?</span> <br>
+          Follow these 3 steps:<br>
+          1 - Choose a game mode: with numbers (with a precise order to hit the cancer cells), or without numbers.<br>
+          2 - Choose a difficulty level (from 1 to 3).<br>
+          3 - Click on the "start" button to start the timer and off you go!
+        </p>
+      </div>
+    </div>
+    <div id="HowToPlayFrench" class="modal">
+      <div class="modal-content">
+        <span class="close closeHTP">&times;</span>
+        <p>
+          <button id="languageFrench">English</button>
+          <span class="centerText">L'utilité de ce jeu ?</span> <br>
+          Ce jeu a pour objectif de :<br>
+          - sensibiliser au cancer du poumon.<br>
+          - permettre aux professionnels de s'entraîner à utiliser avec précision une souris,
+          un pavé taclile ou une manette. En effet les appareils actuels de naviguation dans le corps humain
+          se controlent à partir d'une manette. <br> <br>
+          <span class="centerText">L'objectif du jeu ?</span> <br>
+          Il faut toucher les 8 cellules cancéreuses sans toucher les parois des poumons. <br> <br>
+          <span class="centerText">Comment jouer ?</span> <br>
+          Suivez ces 3 étapes :<br>
+          1 - Choisissez un mode de jeu : avec nombres (avec un ordre précis pour toucher les cellules cancéreuses), ou
+          sans nombres.<br>
+          2 - Choisissez un niveau de difficulté (de 1 à 3).<br>
+          3 - Cliquez sur le bouton "start" pour lancer le chronomètre et c'est parti !
+        </p>
+      </div>
+    </div>
+    <div id="myModalWinEnglish" class="modal">
+      <div class="modal-content">
+        <span class="close closeWin">&times;</span>
+        <p>
+          <button id="languageEnglish2">Français</button>
+          <span class="centerText">You won!</span> <br>
+          Here is information about lung cancer: <br> <br>
+          1 - Cancer is the 6th cause of death in the world. <br>
+          2 - Lung cancer is the 3rd most common cancer in United Kingdom. <br>
+          3 - Lung cancer causes the most damage: 1 in 5 people survive. <br>
+          4 - In United Kingdom, in 2018, 34 771 people died from lung cancer. <br>
+          5 - The median age of diagnosis is 68 years for men and 66 years for women. <br>
+          6 - Factors increase the risk of having lung cancer: <br>
+          &nbsp;&nbsp;&nbsp; - ultraviolet and ionizing radiation, <br>
+          &nbsp;&nbsp;&nbsp; - asbestos, tobacco smoke, alcohol, <br>
+          &nbsp;&nbsp;&nbsp; - viruses, bacteria or parasites. <br>
+          7 - The symptoms of lung cancer are: <br>
+          &nbsp;&nbsp;&nbsp; - persistent cough, <br>
+          &nbsp;&nbsp;&nbsp; - chest pain, <br>
+          &nbsp;&nbsp;&nbsp; - shortness of breath, <br>
+          &nbsp;&nbsp;&nbsp; - unexplained weight loss, <br>
+          &nbsp;&nbsp;&nbsp; - fatigue and cough with blood.
+        </p>
+      </div>
+    </div>
+    <div id="myModalWinFrench" class="modal">
+      <div class="modal-content">
+        <span class="close closeWin">&times;</span>
+        <p>
+          <button id="languageFrench2">English</button>
+          <span class="centerText">Vous avez gagné !</span> <br>
+          Voici des informations relatives au cancer du poumon : <br> <br>
+          1 - Le cancer est la 6ème cause de mortalité dans le monde. <br>
+          2 - Le cancer du poumon est le 3ème cancer le plus fréquent en France. <br>
+          3 - Le cancer du poumon est le plus meurtrié : 1 personne sur 5 en survie. <br>
+          4 - En France, en 2018, 33 117 personnes sont décédées du cancer du poumon. <br>
+          5 - L'âge médian du diagnostic est de 68 ans pour les hommes et de 66 ans pour les femmes. <br>
+          6 - Des facteurs augmentent le risque d'avoir un cancer du poumon : <br>
+          &nbsp;&nbsp;&nbsp; - les ultraviolets et radiations ionisantes, <br>
+          &nbsp;&nbsp;&nbsp; - l'amiante, la fumée du tabac, l'alcool, <br>
+          &nbsp;&nbsp;&nbsp; - des virus, bactéries ou parasites. <br>
+          7 - Les symptômes du cancer du poumon sont : <br>
+          &nbsp;&nbsp;&nbsp; - la toux persistante, <br>
+          &nbsp;&nbsp;&nbsp; - la douleur thoracique, <br>
+          &nbsp;&nbsp;&nbsp; - l'essoufflement, <br>
+          &nbsp;&nbsp;&nbsp; - la perte de poids inexpliquée, <br>
+          &nbsp;&nbsp;&nbsp; - la fatigue et la toux avec du sang.
+        </p>
+      </div>
+    </div>
+    <div id="myModalLoseEnglish" class="modal">
+      <div class="modal-content">
+        <span class="close closeLose">&times;</span>
+        <p>
+          <button id="languageEnglish3">Français</button>
+          <span class="centerText">You lost!</span> <br>
+          Here is information about lung cancer: <br> <br>
+          1 - Cancer is the 6th cause of death in the world. <br>
+          2 - Lung cancer is the 3rd most common cancer in United Kingdom. <br>
+          3 - Lung cancer causes the most damage: 1 in 5 people survive. <br>
+          4 - In United Kingdom, in 2018, 34 771 people died from lung cancer. <br>
+          5 - The median age of diagnosis is 68 years for men and 66 years for women. <br>
+          6 - Factors increase the risk of having lung cancer: <br>
+          &nbsp;&nbsp;&nbsp; - ultraviolet and ionizing radiation, <br>
+          &nbsp;&nbsp;&nbsp; - asbestos, tobacco smoke, alcohol, <br>
+          &nbsp;&nbsp;&nbsp; - viruses, bacteria or parasites. <br>
+          7 - The symptoms of lung cancer are: <br>
+          &nbsp;&nbsp;&nbsp; - persistent cough, <br>
+          &nbsp;&nbsp;&nbsp; - chest pain, <br>
+          &nbsp;&nbsp;&nbsp; - shortness of breath, <br>
+          &nbsp;&nbsp;&nbsp; - unexplained weight loss, <br>
+          &nbsp;&nbsp;&nbsp; - fatigue and cough with blood.
+        </p>
+      </div>
+    </div>
+    <div id="myModalLoseFrench" class="modal">
+      <div class="modal-content">
+        <span class="close closeLose">&times;</span>
+        <p>
+          <button id="languageFrench3">English</button>
+          <span class="centerText">Vous avez perdu !</span> <br>
+          Voici des informations relatives au cancer du poumon : <br> <br>
+          1 - Le cancer est la 6ème cause de mortalité dans le monde. <br>
+          2 - Le cancer du poumon est le 3ème cancer le plus fréquent en France. <br>
+          3 - Le cancer du poumon est le plus meurtrié : 1 personne sur 5 en survie. <br>
+          4 - En France, en 2018, 33 117 personnes sont décédées du cancer du poumon. <br>
+          5 - L'âge médian du diagnostic est de 68 ans pour les hommes et de 66 ans pour les femmes. <br>
+          6 - Des facteurs augmentent le risque d'avoir un cancer du poumon : <br>
+          &nbsp;&nbsp;&nbsp; - les ultraviolets et radiations ionisantes, <br>
+          &nbsp;&nbsp;&nbsp; - l'amiante, la fumée du tabac, l'alcool, <br>
+          &nbsp;&nbsp;&nbsp; - des virus, bactéries ou parasites. <br>
+          7 - Les symptômes du cancer du poumon sont : <br>
+          &nbsp;&nbsp;&nbsp; - la toux persistante, <br>
+          &nbsp;&nbsp;&nbsp; - la douleur thoracique, <br>
+          &nbsp;&nbsp;&nbsp; - l'essoufflement, <br>
+          &nbsp;&nbsp;&nbsp; - la perte de poids inexpliquée, <br>
+          &nbsp;&nbsp;&nbsp; - la fatigue et la toux avec du sang.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <span id="copyright">&copy; Quentin Coulombeaux, 2023</span>
+  </div>
+  <img src="./surgical-forceps.png" alt="Surgical forceps to move" class="game-image" id="surgfor">
+  </div>
+  <script src="script1.js"></script>
+  <script src="script2.js"></script>
+  <script src="script3.js"></script>
+</body>
+
+</html>
